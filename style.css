@@ -1,0 +1,279 @@
+@font-face {
+  font-family: b;
+  src: url(4_0.ttf);
+}
+
+@font-face {
+  font-family: r;
+  src: url(4.ttf);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'b', 'r';
+}
+
+.wrapper {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  margin: 3% auto;
+  box-shadow: 2px 18px 70px 0px #9D9D9D;
+  overflow: hidden;
+}
+
+.login-text {
+  width: 800px;
+  height: 450px;
+  background: linear-gradient(145deg, #FFC60A, #0051B2);
+  position: absolute;
+  top: -300px;
+  box-sizing: border-box;
+  padding: 2%;
+  transition: all 1s ease-in-out;
+  z-index: 11;
+}
+
+.text {
+  color: #fff;
+  display: none;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+
+.text a, .text a:visited {
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  transition: all 1s ease-in-out;
+}
+
+.text input {
+  height: 40px;
+  width: 280px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  opacity: 0.8;
+  text-align: right;
+  outline: none;
+  padding: 0px 10px 0px 10px;
+  font-size: 15px;
+  color: #505050;
+}
+
+textarea {
+  height: 80px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  opacity: 0.8;
+  text-align: right;
+  outline: none;
+  color: #505050;
+  padding-right: 10px;
+  margin: 25px 12px 0px 12px;
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+}
+
+.text input[type=text] {
+  margin-top: 25px;
+}
+
+.text button {
+  margin-top: 25px;
+  height: 40px;
+  width: 140px;
+  outline: none;
+  font-size: 15px;
+}
+.text .login-btn {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.8;
+  cursor: pointer;
+  color: #505050;
+}
+
+.cta {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #505050;
+  border: 3px solid #fff;
+  position: absolute;
+  bottom: -30px;
+  left: 370px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.call-text {
+  background-color: #fff;
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  bottom: 0;
+  padding: 10%;
+  box-sizing: border-box;
+  text-align: center;
+  background-image: url(/img/1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+  0%{
+    background-image: url(/img/2.jpeg);
+  }
+  20%{
+    background-image: url(/img/3.jpeg);
+  }
+  40%{
+    background-image: url(/img/4.jpeg);
+  }
+  60%{
+    background-image: url(/img/5.jpeg);
+  }
+  80%{
+    background-image: url(/img/6.jpeg);
+  }
+  100%{
+    background-image: url(/img/7.jpg);
+  }
+}
+
+.call-text h1 {
+  font-size: 38px;
+  margin-top: 10%;
+  color: #ffffff;
+  background:linear-gradient(180deg, transparent 57%, #0051B2 57%);
+  width: 80%;
+  margin: 50px auto;
+
+}
+
+.call-text h1 span {
+  color: #FFC60A;
+  font-size: 40px;
+}
+
+.call-text i {
+  background-color: #0051B2;
+  color: white;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 140px 5px;
+	height: 40px;
+	width: 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.show-hide {
+  display: block;
+}
+
+.expand {
+  transform: translateY(300px);
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.rating {
+  background-color: #ffffff ;
+  padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+svg {
+  fill: #505050;
+  height: 30px;
+  width: 30px;
+  margin: 0px 10px;
+}
+
+.rating-form-2 svg {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.5rem;
+}
+
+#radios label {
+  position: relative;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type="radio"] + svg {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+input + svg {
+  cursor: pointer;
+}
+
+input[class="super-happy"]:hover + svg,
+input[class="super-happy"]:checked + svg,
+input[class="super-happy"]:focus + svg {
+  fill: rgb(0, 204, 79);
+}
+
+input[class="happy"]:hover + svg,
+input[class="happy"]:checked + svg,
+input[class="happy"]:focus + svg {
+  fill: rgb(0, 128, 255);
+}
+
+input[class="neutral"]:hover + svg,
+input[class="neutral"]:checked + svg,
+input[class="neutral"]:focus + svg {
+  fill: rgb(232, 214, 0);
+}
+
+input[class="sad"]:hover + svg,
+input[class="sad"]:checked + svg,
+input[class="sad"]:focus + svg {
+  fill: rgb(229, 132, 0);
+}
+
+input[class="super-sad"]:hover + svg,
+input[class="super-sad"]:checked + svg,
+input[class="super-sad"]:focus + svg {
+  fill: rgb(239, 42, 16);
+}
+
+a {
+  text-decoration: none;
+}
