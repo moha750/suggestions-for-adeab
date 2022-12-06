@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #fafafa;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -24,6 +24,10 @@ body {
 	font-family: 'b', 'r';
 	height: 100vh;
 	margin: -20px 0 50px;
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .wrapper {
