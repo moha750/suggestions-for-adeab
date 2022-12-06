@@ -154,22 +154,22 @@ textarea {
 
 @keyframes animate {
   0%{
-    background-image: url(img/2.jpeg);
+    background-image: url(2.jpeg);
   }
   20%{
-    background-image: url(img/3.jpeg);
+    background-image: url(3.jpeg);
   }
   40%{
-    background-image: url(img/4.jpeg);
+    background-image: url(4.jpeg);
   }
   60%{
-    background-image: url(img/5.jpeg);
+    background-image: url(5.jpeg);
   }
   80%{
-    background-image: url(img/6.jpeg);
+    background-image: url(6.jpeg);
   }
   100%{
-    background-image: url(img/7.jpg);
+    background-image: url(7.jpg);
   }
 }
 
